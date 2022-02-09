@@ -11,5 +11,12 @@
 
     <artifactId>mykit-concurrent-chapter07</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>0.11</version>
+        </dependency>
+    </dependencies>
 
 </project>
