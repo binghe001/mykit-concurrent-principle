@@ -10,8 +10,8 @@ import org.openjdk.jol.info.ClassLayout;
 public class ObjectLockAnalysis {
 
     public static void main(String[] args) throws InterruptedException {
-        //printNormalLock();
-        printBiasLock();
+        printNormalLock();
+        //printBiasLock();
     }
 
     /**
