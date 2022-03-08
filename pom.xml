@@ -13,6 +13,7 @@
         <module>mykit-concurrent-chapter04</module>
         <module>mykit-concurrent-chapter06</module>
         <module>mykit-concurrent-chapter07</module>
+        <module>mykit-concurrent-chapter09</module>
     </modules>
 
 
