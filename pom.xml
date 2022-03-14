@@ -18,6 +18,7 @@
         <module>mykit-concurrent-chapter12</module>
         <module>mykit-concurrent-chapter14</module>
         <module>mykit-concurrent-chapter15</module>
+        <module>mykit-concurrent-chapter16</module>
     </modules>
 
 
