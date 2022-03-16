@@ -45,10 +45,10 @@ public class ReentrantAQSLock implements Lock {
 
         @Override
         protected boolean tryRelease(int releases) {
-            //对状态减去相应的计数
-            int status = getState() - releases;
             if (Thread.currentThread() != getExclusiveOwnerThread())
                 throw new IllegalMonitorStateException();
+            //对状态减去相应的计数
+            int status = getState() - releases;
             //标识是否完全释放锁成功，true:是；false:否
             boolean flag = false;
             //如果状态减为0，说明没有线程持有锁了
