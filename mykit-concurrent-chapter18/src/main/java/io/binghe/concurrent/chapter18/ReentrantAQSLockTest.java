@@ -1,7 +1,6 @@
 package io.binghe.concurrent.chapter18;
 
 import java.util.concurrent.locks.Lock;
-import java.util.stream.IntStream;
 
 /**
  * @author binghe
@@ -26,8 +25,14 @@ public class ReentrantAQSLockTest {
     public void incrementCount(){
         try{
             lock.lock();
+            System.out.println(Thread.currentThread().getName() + " 第一次获取到锁");
+            lock.lock();
+            System.out.println(Thread.currentThread().getName() + " 第二次获取到锁");
             count++;
         }finally {
+            System.out.println(Thread.currentThread().getName() + " 第一次释放锁");
+            lock.unlock();
+            System.out.println(Thread.currentThread().getName() + " 第二次释放锁");
             lock.unlock();
         }
     }
@@ -39,23 +44,13 @@ public class ReentrantAQSLockTest {
     public static void main(String[] args) throws InterruptedException {
         ReentrantAQSLockTest reentrantAQSLockTest = new ReentrantAQSLockTest();
 
-        Thread threadA = new Thread(() -> {
-            IntStream.range(0, 500).forEach((i) -> {
-                reentrantAQSLockTest.incrementCount();
-            });
-        });
-
-        Thread threadB = new Thread(() -> {
-            IntStream.range(0, 500).forEach((i) -> {
-                reentrantAQSLockTest.incrementCount();
-            });
-        });
-
-        threadA.start();
-        threadB.start();
-
-        threadA.join();
-        threadB.join();
+        for(int i = 0; i < 10; i++){
+             Thread thread = new Thread(() -> {
+                 reentrantAQSLockTest.incrementCount();
+             });
+             thread.start();
+             thread.join();
+         }
 
         System.out.println("count的最终结果为: " + reentrantAQSLockTest.getCount());
     }
