@@ -21,6 +21,7 @@
         <module>mykit-concurrent-chapter16</module>
         <module>mykit-concurrent-chapter17</module>
         <module>mykit-concurrent-chapter18</module>
+        <module>mykit-concurrent-chapter19</module>
     </modules>
 
 

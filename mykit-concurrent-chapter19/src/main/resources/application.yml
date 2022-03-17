@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /distribute/lock
+
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    timeout: 30000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: 500ms
+        min-idle: 0
