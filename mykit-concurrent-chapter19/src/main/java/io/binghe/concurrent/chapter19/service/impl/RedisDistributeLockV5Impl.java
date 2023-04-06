@@ -42,7 +42,7 @@ public class RedisDistributeLockV5Impl implements RedisDistributeLock {
         //加锁成功后，计数器的值加1
         if (isLocked){
             Integer count = threadLocalCount.get() == null ? 0 : threadLocalCount.get();
-            threadLocalCount.set(count++);
+            threadLocalCount.set(++count);
         }
         return isLocked;
     }
