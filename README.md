@@ -33,8 +33,8 @@
 ### 1. 内容简述
 
 <div align="center">
-    <a href="#" target="_blank">
-        <img src="https://img-blog.csdnimg.cn/fe76310aea734752b3b79c4df1438943.jpeg?raw=true" width="250px">
+    <a href="https://u.jd.com/KqH6S16" target="_blank">
+         <img src="./resources/book/concurrent-001.jpg?raw=true" width="250px">
     </a>
 </div>
 
@@ -73,37 +73,37 @@
 ## 我出版的书籍
 
 <div align="center">
-    <img src="https://img2023.cnblogs.com/blog/1729473/202303/1729473-20230317173305292-173690733.jpg?raw=true" width="80%">
+    <img src="./resources/book/concurrent-003.jpg?raw=true" width="80%">
       <div style="font-size: 18px;"><a href="https://u.jd.com/izMwOkE">《深入理解高并发编程：JDK核心技术》</a></div>
     <br/>
 </div>
 
 <div align="center">
-    <img src="https://img-blog.csdnimg.cn/fe76310aea734752b3b79c4df1438943.jpeg?raw=true" width="80%">
+    <img src="./resources/book/concurrent-001.jpg?raw=true" width="80%">
       <div style="font-size: 18px;"><a href="https://item.jd.com/13190783.html">《深入理解高并发编程：核心原理与案例实战》</a></div>
     <br/>
 </div>
 
 <div align="center">
-    <img src="https://img-blog.csdnimg.cn/5ff576f8189d46cf83c59fe4e5efc6dd.png?raw=true" width="80%">
+    <img src="./resources/book/concurrent-002.png?raw=true" width="80%">
       <div style="font-size: 18px;"><a href="https://item.jd.com/10067507938306.html">《深入高平行開發：深度原理&專案實戰》</a></div>
     <br/>
 </div>
 
 <div align="center">
-    <img src="https://img-blog.csdnimg.cn/5ee367b68023466a87f66763a64a4133.jpg?raw=true" width="100%">
+    <img src="./resources/book/transaction.png?raw=true" width="80%">
       <div style="font-size: 18px;"><a href="https://item.jd.com/12972343.html">《深入理解分布式事务：原理与实战》</a></div>
     <br/>
 </div>
 
 <div align="center">
-    <img src="https://img-blog.csdnimg.cn/20210426115257555.png?raw=true" width="80%">
+    <img src="./resources/book/mysql.png?raw=true" width="80%">
       <div style="font-size: 18px;"><a href="https://item.jd.com/13036154.html">《MySQL技术大全：开发、优化与运维实战》</a></div>
     <br/>
 </div>
 
 <div align="center">
-    <img src="https://img-blog.csdnimg.cn/20200828011209412.png?raw=true" width="80%">
+    <img src="./resources/book/bigdata.png?raw=true" width="80%">
       <div style="font-size: 18px;"><a href="https://item.jd.com/12710993.html">《海量数据处理与大数据技术实战》</a></div>
     <br/>
 </div>
