@@ -73,6 +73,8 @@ public class RedisDistributeLockV7Impl implements RedisDistributeLock {
                         stringRedisTemplate.delete(currentThreadId);
                     }
                 }
+            }else {
+                threadLocalCount.set(count);
             }
 
         }

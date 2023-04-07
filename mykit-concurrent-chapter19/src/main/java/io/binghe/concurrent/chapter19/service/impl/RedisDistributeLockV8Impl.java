@@ -74,6 +74,8 @@ public class RedisDistributeLockV8Impl implements RedisDistributeLock {
 
                     }
                 }
+            }else {
+                threadLocalCount.set(count);
             }
 
         }

@@ -73,6 +73,8 @@ public class RedisDistributeLockV6Impl implements RedisDistributeLock {
                 //防止内存泄露
                 threadLocal.remove();
                 threadLocalCount.remove();
+            }else {
+                threadLocalCount.set(count);
             }
 
         }
