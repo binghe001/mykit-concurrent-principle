@@ -17,8 +17,8 @@ public class PessimismLockTest {
      * 加锁并释放锁
      */
     public void lockAndUnlock(){
+        lock.lock();
         try{
-            lock.lock();
             System.out.println(Thread.currentThread().getName() + " 抢占锁成功");
         }finally {
             lock.unlock();

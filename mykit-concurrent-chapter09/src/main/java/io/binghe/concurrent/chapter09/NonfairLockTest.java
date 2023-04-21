@@ -19,8 +19,8 @@ public class NonfairLockTest {
      * 非公平锁模式下的加锁与释放锁
      */
     public void fairLockAndUnlock(){
+        lock.lock();
         try{
-            lock.lock();
             System.out.println(Thread.currentThread().getName() + "抢占锁成功");
         }finally {
             lock.unlock();

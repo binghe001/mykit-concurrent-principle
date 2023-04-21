@@ -20,8 +20,8 @@ public class MutexLockTest {
      * 加锁并释放锁
      */
     public void lockAndUnlock(){
+        lock.lock();
         try{
-            lock.lock();
             System.out.println(Thread.currentThread().getName() + " 抢占锁成功");
             Thread.sleep(1000);
         }catch (InterruptedException e){

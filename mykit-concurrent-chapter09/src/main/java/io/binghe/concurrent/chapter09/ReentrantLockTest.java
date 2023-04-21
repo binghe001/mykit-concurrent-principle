@@ -17,11 +17,12 @@ public class ReentrantLockTest {
      * 加锁并释放锁
      */
     public void lockAndUnlock(){
+        lock.lock();
+        System.out.println(Thread.currentThread().getName() + " 第1次抢占锁成功");
+        lock.lock();
+        System.out.println(Thread.currentThread().getName() + " 第2次抢占锁成功");
         try{
-            lock.lock();
-            System.out.println(Thread.currentThread().getName() + " 第1次抢占锁成功");
-            lock.lock();
-            System.out.println(Thread.currentThread().getName() + " 第2次抢占锁成功");
+
         }finally {
             lock.unlock();
             System.out.println(Thread.currentThread().getName() + " 第1次释放锁成功");
